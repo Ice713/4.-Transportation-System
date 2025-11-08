@@ -16,5 +16,12 @@ namespace _4.Transportation_System
         {
             InitializeComponent();
         }
+
+        private void buttonShowDetails_Click(object sender, EventArgs e)
+        {
+            Vehicle myBus = new Bus(Convert.ToDecimal(numericUpDownMaxSpeed.Text), Convert.ToInt32(numericUpDownSeatingCapacity.Text));
+
+            MessageBox.Show(myBus.ShowDetails(), "Bus Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

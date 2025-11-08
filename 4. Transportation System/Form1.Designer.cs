@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMaxSpeed = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSeatingCapacity = new System.Windows.Forms.NumericUpDown();
             this.buttonShowDetails = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeatingCapacity)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,25 +66,25 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Seating Capacity:";
             // 
-            // numericUpDown1
+            // numericUpDownMaxSpeed
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Location = new System.Drawing.Point(339, 140);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxSpeed.DecimalPlaces = 2;
+            this.numericUpDownMaxSpeed.Location = new System.Drawing.Point(339, 140);
+            this.numericUpDownMaxSpeed.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 3;
+            this.numericUpDownMaxSpeed.Name = "numericUpDownMaxSpeed";
+            this.numericUpDownMaxSpeed.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownMaxSpeed.TabIndex = 3;
             // 
-            // numericUpDown2
+            // numericUpDownSeatingCapacity
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(339, 168);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 4;
+            this.numericUpDownSeatingCapacity.Location = new System.Drawing.Point(339, 168);
+            this.numericUpDownSeatingCapacity.Name = "numericUpDownSeatingCapacity";
+            this.numericUpDownSeatingCapacity.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownSeatingCapacity.TabIndex = 4;
             // 
             // buttonShowDetails
             // 
@@ -95,6 +95,7 @@
             this.buttonShowDetails.TabIndex = 5;
             this.buttonShowDetails.Text = "Show Details";
             this.buttonShowDetails.UseVisualStyleBackColor = true;
+            this.buttonShowDetails.Click += new System.EventHandler(this.buttonShowDetails_Click);
             // 
             // Form1
             // 
@@ -102,15 +103,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonShowDetails);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownSeatingCapacity);
+            this.Controls.Add(this.numericUpDownMaxSpeed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "4. Transportation System";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeatingCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,8 +122,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownMaxSpeed;
+        private System.Windows.Forms.NumericUpDown numericUpDownSeatingCapacity;
         private System.Windows.Forms.Button buttonShowDetails;
     }
 }
